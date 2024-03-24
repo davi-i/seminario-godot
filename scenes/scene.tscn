@@ -21,6 +21,7 @@ gradient = SubResource("Gradient_svgif")
 
 [node name="Player" type="CharacterBody2D" parent="."]
 position = Vector2(483, 195)
+scale = Vector2(5, 5)
 script = ExtResource("1_cmfsn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
@@ -30,11 +31,23 @@ shape = SubResource("CapsuleShape2D_ks2is")
 texture = ExtResource("1_b1hcx")
 
 [node name="Plataform" type="StaticBody2D" parent="."]
-position = Vector2(471, 349)
+position = Vector2(285, 315)
+scale = Vector2(2, 2)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Plataform"]
 shape = SubResource("RectangleShape2D_oj8f6")
 
 [node name="Sprite2D" type="Sprite2D" parent="Plataform"]
+scale = Vector2(1, 20)
+texture = SubResource("GradientTexture1D_f01wg")
+
+[node name="Plataform2" type="StaticBody2D" parent="."]
+position = Vector2(825, 491)
+scale = Vector2(2, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plataform2"]
+shape = SubResource("RectangleShape2D_oj8f6")
+
+[node name="Sprite2D" type="Sprite2D" parent="Plataform2"]
 scale = Vector2(1, 20)
 texture = SubResource("GradientTexture1D_f01wg")
